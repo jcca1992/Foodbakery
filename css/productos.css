@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?m9rcos');
+    src:  url('../fonts/icomoon.eot?m9rcos#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?m9rcos') format('truetype'),
+      url('../fonts/icomoon.woff?m9rcos') format('woff'),
+      url('../fonts/icomoon.svg?m9rcos#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-github:before {
+    content: "\e900";
+  }
+  .icon-instagram:before {
+    content: "\e901";
+  }
+  .icon-twitter:before {
+    content: "\e902";
+  }
+  .icon-facebook:before {
+    content: "\e903";
+  }
+  .icon-brand:before {
+    content: "\e903";
+  }
+  .icon-social:before {
+    content: "\e903";
+  }
+
+body{
+    margin: 0px;
+    padding: 1em 3em;
+    background: white;
+}
+                                        /* header */
+.logo-container{
+    background: rgb(81, 148, 61);
+    border-bottom: 2px solid rgb(54, 99, 40);
+    border-radius: .8em;
+    width: 93%;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    
+}
+.logo{
+    width: 80px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-top: .5em;
+    
+}
+.menu ol{
+    display: flex;
+    height: inherit; 
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    color: rgb(238, 182, 16);
+    font-family: 'fondamento', 'cursive';
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: .8em;
+}
+.menu ol,ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+}
+.link{
+  transition: 1s ease;
+}
+.link.a:hover{ /* home */
+  font-size: 2em;
+}
+.link.b:hover{/* nosotros */
+  font-size: 2em;
+}
+.link.c:hover{/* productos */
+  font-size: 2em;
+}
+.link.d:hover{/* promociones */
+  font-size: 2em;
+}
+                                      /* content */
+.container{
+    margin-top: 9em;
+    margin-bottom: 2em;
+    display: grid;
+    gap: 1em 1em;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+.item{
+    display: flex;
+    padding: .8em;
+    width: 80%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgb(214,214,214);
+    justify-content: center;
+    box-shadow: 9px 10px 15px 0px rgba(0,0,0,0.75);
+}
+
+                    /* lista */
+
+.item:nth-of-type(1){ /* alineando la lista hacia la izquierda */
+  justify-content: start;
+}
+.item ul{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  font-family: 'fondamento', 'cursiva';
+}
+.item li{
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+/* formulario */
+
+.form{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+.form input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.form input:nth-of-type(4){
+  height: 10em;
+}
+.form p{
+  font-size: 20px;
+  color: #3a3b3f;
+  margin-bottom: 1em;
+}
+.form button{
+  background: #98ca3f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  border-bottom: 5px solid #6d932b;
+  display: inline-block;
+}
+
+                                        /* footer */
+
+.footer{
+    border-bottom: 2px solid rgb(124, 124, 124);
+    border-radius: .8em;
+    background: rgb(201,201,201);
+    padding: 0px 1.5em;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p{
+    margin: 0px;
+    font-family: 'fondamento', 'cursive';
+}
+.social .icon-instagram{
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+}
